@@ -8,7 +8,7 @@ public class pyramiddrawing {
         int line = 1;
         while (line <= height) {
             String space = "", character = "";
-            for (int i = 1; i <= (height - line); i++){
+            for (int i = height-line; i >= 1; i--){
                 space += "  ";
             }
             for (int j = 1; j <= (2*line - 1); j++){
