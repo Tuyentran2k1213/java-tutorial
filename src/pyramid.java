@@ -25,7 +25,7 @@ public class pyramid {
 //                space += " ";
                 System.out.print(" ");
             }
-            for (int j = 1; j <= (2 * line - 2); j++){
+            for (int j = 1; j <= (2 * line - 2); j = j+1){
 //                character += "*";
                 System.out.print("*");
             }
