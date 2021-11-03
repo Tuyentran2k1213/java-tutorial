@@ -8,30 +8,32 @@ public class pyramid {
         for (int line = 1; line <= HEIGHT; line++) {
             space = ""; character = "";
             for (int n = 1; n < line; n++) {
-//                space += " ";
-                System.out.print(" ");
+                space += " ";
+//                System.out.print(" ");
             }
             for (int m = HEIGHT * 2 - 1 ; m >= (2 * line - 1); m--) {
-//                character += "*";
-                System.out.print("*");
+                character += "*";
+//                System.out.print("*");
             }
-//            record = space + character + "\n";
-//            result += record;
-            System.out.print("\n");
+            record = space + character + "\n";
+            result += record;
+//            System.out.print("\n");
         }
-        for (int line = 1; line <= HEIGHT; line++){
-//            space = ""; character = "";
-            for (int i = 1; i < HEIGHT - line - 1; i++){
-//                space += " ";
-                System.out.print(" ");
+        for (int line = 2; line <= HEIGHT; line++){
+            space = ""; character = "";
+            for (int i = 1; i <= HEIGHT - line; i++){
+                space += " ";
+//                System.out.print(" ");
             }
-            for (int j = 1; j <= (2 * line - 2); j = j+1){
-//                character += "*";
-                System.out.print("*");
+            for (int j = 1; j <= (2 * line - 1); j = j+1){
+                character += "*";
+//                System.out.print("*");
             }
-//            record = space + character + "\n";
-//            result += record;
-            System.out.print("\n");
+            record = space + character + "\n";
+            result += record;
+//            System.out.print("\n");
         }
+        System.out.print(result);
+        return;
     }
 }
