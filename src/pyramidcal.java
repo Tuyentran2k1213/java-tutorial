@@ -6,7 +6,11 @@ public class pyramidcal {
         int Height = myobj.nextInt(), num = 1;
         while(num <= Height){
             for (int i = 1; i <= num; i++){
-                System.out.print("*");
+                if( num > 2 && num < Height && i < num && i > 1){
+                    System.out.print(" ");
+                } else {
+                    System.out.print("*");
+                }
             }
             num++;
             System.out.println("");
